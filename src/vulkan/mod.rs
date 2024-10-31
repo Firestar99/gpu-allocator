@@ -145,7 +145,7 @@ pub struct AllocatorCreateDesc {
 /// [`copy_from_slice_to_offset`]: presser::copy_from_slice_to_offset
 /// [helper functions]: presser#functions
 /// [\[1\]]: presser#motivation
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Allocation {
     chunk_id: Option<std::num::NonZeroU64>,
     offset: u64,
